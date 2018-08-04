@@ -16,3 +16,6 @@
 采用hiredis接口调用redis数据库
 
 ## protobuf低体积，高效率，保密传输协议
+
+## 三方库
+服务端依赖于hiredis静态库。整个项目都依赖于protobuf静态库
