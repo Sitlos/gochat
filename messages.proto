@@ -1,0 +1,39 @@
+syntax="proto3";
+
+message UserMessage{
+   bytes user_number=1;
+   bytes password=2;
+   bytes nickname=3;
+   bytes signture=4;
+   bool is_online=5;
+   enum OperatorType{
+	LOGIN=0;
+	REGISTER=1;
+	CHECK=2;
+   }
+   OperatorType operator_tpye=6;
+   enum ReplyResult{
+	SUCCESS=0;
+	FAILED=1;
+   }
+   ReplyResult reply_result=7;
+}
+
+message ChatMessage{
+   enum MessageType{
+	PERSONAL_SEND=0;
+        GROUP_SEND=1;
+   }
+   MessageType message_type=1;
+   bytes from_number=2;
+   bytes nickname=3;
+   bytes to_number=4;
+   bytes time=5;
+   bytes data=6;
+   enum ReplyResult{
+	SUCCESS=0;
+	FAILED=1;
+   }
+   ReplyResult reply_result=7;
+}
+
