@@ -14,7 +14,8 @@
 namespace gochat {
 
 	template <typename T>
-	class SyncQueue{
+	class SyncQueue
+	{
 	public:
 		SyncQueue(int maxSize) : max_size_(maxSize), need_stop(false) { }
 		//Ìí¼ÓÊÂ¼þ
@@ -58,7 +59,8 @@ namespace gochat {
 	};
 
 
-	class ThreadPool{
+	class ThreadPool
+	{
 	public:
 		using Task = std::function<void()>;
 
