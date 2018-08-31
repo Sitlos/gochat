@@ -10,8 +10,8 @@
 
 namespace gochat {
 
-	const char kUserServerIp[] = "192.168.116.134";
-	const char kMessageServerIp[] = "192.168.116.134";
+	const char kUserServerIp[] = "127.0.0.1";
+	const char kMessageServerIp[] = "0.0.0.0";
 	const char kUserDbIp[] = "127.0.0.1";
 	const char kMessageDbIp[] = "127.0.0.1";
 	const short kUserServerPort = 9838;//用户服务端口

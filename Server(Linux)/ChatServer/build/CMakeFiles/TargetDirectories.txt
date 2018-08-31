@@ -1,0 +1,3 @@
+/home/ubuntu/Sitlos/ChatServer/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/Sitlos/ChatServer/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Sitlos/ChatServer/build/CMakeFiles/ChatServer.dir

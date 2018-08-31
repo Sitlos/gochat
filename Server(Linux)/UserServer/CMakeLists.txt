@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(hello)
+add_compile_options(-std=c++11)
+link_libraries(hiredis)
+link_libraries(protobuf)
+link_libraries(pthread)
+aux_source_directory(. source_list)
+add_executable(UserServer  ${source_list})

@@ -82,6 +82,7 @@ void Service(int sockfd){
         char user_message_buf[kBuffSize]={},reply_buff[kBuffSize]={},restore_buff[kBuffSize]={};
         //when a client leave,set it offline
         if (recv(client_fd,user_message_buf,kBuffSize,0)<=0){
+	    printf("lost\n");
             client_fds.remove(client_fd);
             EpollHandler::DelClientSockfd(g_epoll_sockfd,client_fd,true);
             close(client_fd);
